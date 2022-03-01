@@ -9,17 +9,7 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    if(request.args['pastRaceHr2'] != "" and request.args['pastRaceMin2'] != "" and request.args['pastRaceSec2'] != ""):
-        target = request.args['targetRace']
-        race1 = request.args['pastRace']
-        r1Hr = int(request.args['pastRaceHr'])
-        r1Min = int(request.args['pastRaceMin'])
-        r1Sec = int(request.args['pastRaceSec'])
-        race2 = request.args['pastRace2']
-        r2Hr = int(request.args['pastRaceHr2'])
-        r2Min = int(request.args['pastRaceMin2'])
-        r2Sec = int(request.args['pastRaceSec2'])
-    else:
+    if(request.args['pastRaceHr2'] == "" and request.args['pastRaceMin2'] == "" and request.args['pastRaceSec2'] == ""):
         target = request.args['targetRace']
         race1 = request.args['pastRace']
         r1Hr = int(request.args['pastRaceHr'])
@@ -71,6 +61,17 @@ def render_response():
             prediction = str(datetime.timedelta(seconds=t2))
         else:
             prediction = "Unable to predict. Try again."
+    else:
+        pass
+        # target = request.args['targetRace']
+        # race1 = request.args['pastRace']
+        # r1Hr = int(request.args['pastRaceHr'])
+        # r1Min = int(request.args['pastRaceMin'])
+        # r1Sec = int(request.args['pastRaceSec'])
+        # race2 = request.args['pastRace2']
+        # r2Hr = int(request.args['pastRaceHr2'])
+        # r2Min = int(request.args['pastRaceMin2'])
+        # r2Sec = int(request.args['pastRaceSec2'])
     
     return render_template('response.html', response1 = prediction, response2 = target)
     
