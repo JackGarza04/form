@@ -72,7 +72,7 @@ def render_response():
             t2 = t1 * ((42195 / d2) * 1.06)
             prediction = str(datetime.timedelta(seconds=t2))
         else:
-            pass
+            prediction = "Unable to predict. Try again."
     
     return render_template('response.html', response1 = prediction, response2 = target)
     
