@@ -43,8 +43,6 @@ def render_response():
             d2 = 21097
         elif(target == "Marathon"):
             d2 = 42195
-        else:
-            pass
             
 
         if(target == "fifteenHundred"):
