@@ -36,29 +36,29 @@ def render_response():
         d2 = 42195
         
 
-    if(target == "fifteenHundred"):
-        t2 = t1 * ((1500 / d2) * 1.06)
+    if(race1 == "fifteenHundred"):
+        t2 = t1 * ((d2 / 1500) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "1Mile"):
-        t2 = t1 * ((1609 / d2) * 1.06)
+    elif(race1 == "1Mile"):
+        t2 = t1 * ((d2 / 1609) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "threeK"):
-        t2 = t1 * ((3000 / d2) * 1.06)
+    elif(race1 == "threeK"):
+        t2 = t1 * ((d2 / 3000) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "3mile"):
-        t2 = t1 * ((4828 / d2) * 1.06)
+    elif(race1 == "3mile"):
+        t2 = t1 * ((d2 / 4828) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "fiveK"):
-        t2 = t1 * ((5000 / d2) * 1.06)
+    elif(race1 == "fiveK"):
+        t2 = t1 * ((d2 / 5000) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "tenK"):
-        t2 = t1 * ((10000 / d2) * 1.06)
+    elif(race1 == "tenK"):
+        t2 = t1 * ((d2 / 10000) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "halfMarathon"):
-        t2 = t1 * ((21097 / d2) * 1.06)
+    elif(race1 == "halfMarathon"):
+        t2 = t1 * ((d2 / 21097) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
-    elif(target == "Marathon"):
-        t2 = t1 * ((42195 / d2) * 1.06)
+    elif(race1 == "Marathon"):
+        t2 = t1 * ((d2 / 42195) * 1.06)
         prediction = str(datetime.timedelta(seconds=t2))
     else:
         prediction = "Unable to predict. Try again."
