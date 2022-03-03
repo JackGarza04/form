@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="./static/style.css">
 		<title>Race Predictor</title>
 	</head>
 	<body>
@@ -9,7 +9,7 @@
 			Race Predictor
 		</h1>
 		
-		<form action="/response" id="myForm">
+		<form action="/response" id="myForm" class="text">
 			<label for="targetRace">Select your target race: </label>
 			<select id="targetRace" name="targetRace" form="myForm" required>
 				<option value="" disabled selected hidden>Please Choose...</option>
