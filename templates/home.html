@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<title>Race Predictor</title>
 	</head>
 	<body>
-		<h1>
+		<h1 class="heading">
 			Race Predictor
 		</h1>
 		
@@ -43,7 +44,7 @@
 			<input type="text" name="pastRaceSec" placeholder="Sec" form="myForm" required>
 			<br><br><br>
 			
-			<!-- <label for="pastRace2">Select an additional race you've run previously <i>(Optional)</i>: </label>
+			<label for="pastRace2">Select an additional race you've run previously <i>(Optional)</i>: </label>
 			<select id="pastRace2" name="pastRace2" form="myForm">
 				<option value="" disabled selected hidden>Please Choose...</option>
 				<option value="fifteenHundred">1500M</option>
@@ -61,7 +62,7 @@
 			<input type="text" name="pastRaceHr2" placeholder="Hr" form="myForm">
 			<input type="text" name="pastRaceMin2" placeholder="Min" form="myForm">
 			<input type="text" name="pastRaceSec2" placeholder="Sec" form="myForm">
-			<br><br> -->
+			<br><br>
 			
 			<input type="submit" value="Submit">
 			<input type="reset" value="Reset">

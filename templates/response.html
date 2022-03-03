@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<title>Race Prediction Results</title>
 	</head>
 	<body>
-		<h1>Response:</h1>
-		<br>
-		<p>Your predicted time for a {{ targetRace }} race is:</p>
-		<br>
-		<p>{{ racePrediction }}</p>	
+		<h1 class="heading">Response:</h1>
+		<p class="text">Your predicted time for a {{ response2 }} race is:</p>
+		<p class="text">{{ response1 }}</p>	
 	</body>
 </html>
