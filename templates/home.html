@@ -7,63 +7,65 @@
 	<body>
 		<h1 class="heading">Race Predictor</h1>
 		
-		<form action="/response" id="myForm">
-			<label for="targetRace">Select your target race: </label>
-			<select id="targetRace" name="targetRace" form="myForm" required>
-				<option value="" disabled selected hidden>Please Choose...</option>
-				<option value="fifteenHundred">1500M</option>
-				<option value="1Mile">1 Mile</option>
-				<option value="threeK">3K</option>
-				<option value="3mile">3 Mile</option>
-				<option value="fiveK">5K</option>
-				<option value="tenK">10K</option>
-				<option value="halfMarathon">Half Marathon</option>
-				<option value="Marathon">Marathon</option>
-			</select>
-			<br><br><br>
-			
-			<label for="pastRace">Select a race you've run previously: </label>
-			<select id="pastRace" name="pastRace" form="myForm" required>
-				<option value="" disabled selected hidden>Please Choose...</option>
-				<option value="fifteenHundred">1500M</option>
-				<option value="1Mile">1 Mile</option>
-				<option value="threeK">3K</option>
-				<option value="3mile">3 Mile</option>
-				<option value="fiveK">5K</option>
-				<option value="tenK">10K</option>
-				<option value="halfMarathon">Half Marathon</option>
-				<option value="Marathon">Marathon</option>
-			</select>
-			<br><br>
-			
-			<label for="pastRaceTime">Past race time <i>(hh:mm:ss)</i>:</label><br>
-			<input type="text" name="pastRaceHr" placeholder="Hr" form="myForm" required>
-			<input type="text" name="pastRaceMin" placeholder="Min" form="myForm" required>
-			<input type="text" name="pastRaceSec" placeholder="Sec" form="myForm" required>
-			<br><br><br>
-			
-			<label for="pastRace2">Select an additional race you've run previously <i>(Optional)</i>: </label>
-			<select id="pastRace2" name="pastRace2" form="myForm">
-				<option value="" disabled selected hidden>Please Choose...</option>
-				<option value="fifteenHundred">1500M</option>
-				<option value="1Mile">1 Mile</option>
-				<option value="threeK">3K</option>
-				<option value="3mile">3 Mile</option>
-				<option value="fiveK">5K</option>
-				<option value="tenK">10K</option>
-				<option value="halfMarathon">Half Marathon</option>
-				<option value="Marathon">Marathon</option>
-			</select>
-			<br><br>
-			
-			<label for="pastRaceTime2">Additional past race time <i>(hh:mm:ss)</i>:</label><br>
-			<input type="text" name="pastRaceHr2" placeholder="Hr" form="myForm">
-			<input type="text" name="pastRaceMin2" placeholder="Min" form="myForm">
-			<input type="text" name="pastRaceSec2" placeholder="Sec" form="myForm">
-			<br><br>
-			
-			<input class="button" type="submit" value="Submit">
-			<input class="button" type="reset" value="Reset">
-		</form>
+		<div>
+			<form action="/response" id="myForm">
+				<label for="targetRace">Select your target race: </label>
+				<select id="targetRace" name="targetRace" form="myForm" required>
+					<option value="" disabled selected hidden>Please Choose...</option>
+					<option value="fifteenHundred">1500M</option>
+					<option value="1Mile">1 Mile</option>
+					<option value="threeK">3K</option>
+					<option value="3mile">3 Mile</option>
+					<option value="fiveK">5K</option>
+					<option value="tenK">10K</option>
+					<option value="halfMarathon">Half Marathon</option>
+					<option value="Marathon">Marathon</option>
+				</select>
+				<br><br><br>
+				
+				<label for="pastRace">Select a race you've run previously: </label>
+				<select id="pastRace" name="pastRace" form="myForm" required>
+					<option value="" disabled selected hidden>Please Choose...</option>
+					<option value="fifteenHundred">1500M</option>
+					<option value="1Mile">1 Mile</option>
+					<option value="threeK">3K</option>
+					<option value="3mile">3 Mile</option>
+					<option value="fiveK">5K</option>
+					<option value="tenK">10K</option>
+					<option value="halfMarathon">Half Marathon</option>
+					<option value="Marathon">Marathon</option>
+				</select>
+				<br><br>
+				
+				<label for="pastRaceTime">Past race time <i>(hh:mm:ss)</i>:</label><br>
+				<input type="text" name="pastRaceHr" placeholder="Hr" form="myForm" required>
+				<input type="text" name="pastRaceMin" placeholder="Min" form="myForm" required>
+				<input type="text" name="pastRaceSec" placeholder="Sec" form="myForm" required>
+				<br><br><br>
+				
+				<label for="pastRace2">Select an additional race you've run previously <i>(Optional)</i>: </label>
+				<select id="pastRace2" name="pastRace2" form="myForm">
+					<option value="" disabled selected hidden>Please Choose...</option>
+					<option value="fifteenHundred">1500M</option>
+					<option value="1Mile">1 Mile</option>
+					<option value="threeK">3K</option>
+					<option value="3mile">3 Mile</option>
+					<option value="fiveK">5K</option>
+					<option value="tenK">10K</option>
+					<option value="halfMarathon">Half Marathon</option>
+					<option value="Marathon">Marathon</option>
+				</select>
+				<br><br>
+				
+				<label for="pastRaceTime2">Additional past race time <i>(hh:mm:ss)</i>:</label><br>
+				<input type="text" name="pastRaceHr2" placeholder="Hr" form="myForm">
+				<input type="text" name="pastRaceMin2" placeholder="Min" form="myForm">
+				<input type="text" name="pastRaceSec2" placeholder="Sec" form="myForm">
+				<br><br>
+				
+				<input class="button" type="submit" value="Submit">
+				<input class="button" type="reset" value="Reset">
+			</form>
+		</div>
 	</body>
 </html>
