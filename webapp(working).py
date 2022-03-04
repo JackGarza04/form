@@ -12,7 +12,7 @@ def render_main():
 def render_response():
     #If the user does not include a time for the optional field, do not use it to compute
     if(request.args['pastRaceHr2'] == "" and request.args['pastRaceMin2'] == "" and request.args['pastRaceSec2'] == ""):
-        #variables assigned to information vital to calculations
+        #variables assigned to information used for calculations
         target = request.args['targetRace']
         race1 = request.args['pastRace']
         r1Hr = int(request.args['pastRaceHr'])

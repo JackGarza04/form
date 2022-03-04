@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="./static/style.css">
+		<link rel="stylesheet" href='/static/style.css'>
 		<title>Race Prediction Results</title>
 	</head>
 	<body>
-		<h1 class="heading">Response:</h1>
+		<h1 class="heading">Response</h1>
 		<p class="text">Your predicted time for a {{ response2 }} race is:</p>
-		<p class="text">{{ response1 }}</p>	
+		<p class="text">{{ response1 }}</p> <br>
+		
+		<div>
+			<a href="./templates/home.html">
+				<button type="button">Return to Calculator</button>
+			</a>
+		</div>
 	</body>
 </html>
