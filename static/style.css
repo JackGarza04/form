@@ -17,7 +17,7 @@
 	margin-left: 50px;
 }
 
-input[type=text] {
+input[type=number] {
 	width: 40vw;
 	padding: 12px 20px;
 	margin: 0 auto;
@@ -27,6 +27,13 @@ input[type=text] {
 	transition: 0.5s;
 	outline: none;
 	display: block;
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 select {
